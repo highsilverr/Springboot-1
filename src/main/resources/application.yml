@@ -1,0 +1,30 @@
+# 기본 프로필 (영어)
+app:
+  messages:
+    orderStart: "=== Order Processing Start ==="
+    cookingStart: "=== Cooking food ==="
+    deliveryStart: "=== Delivery Start ==="
+
+# 영어 프로필
+---
+spring:
+  config:
+    activate:
+      on-profile: eng
+app:
+  messages:
+    orderStart: "=== Order Processing Start ==="
+    cookingStart: "Cooking food"
+    deliveryStart: "Delivery started"
+
+# 한국어 프로필
+---
+spring:
+  config:
+    activate:
+      on-profile: kor
+app:
+  messages:
+    orderStart: "=== 주문 처리 시작 ==="
+    cookingStart: "요리 중"
+    deliveryStart: "배달 시작"
